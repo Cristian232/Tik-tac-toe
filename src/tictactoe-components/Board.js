@@ -1,7 +1,7 @@
 import {calculateWinner} from "./calculateWinner";
 import Square from "./Square";
 
-function Board({xIsNext, squares, onPlay}) {
+export function Board({xIsNext, squares, onPlay}) {
     function handleClick(i) {
         if (calculateWinner(squares) || squares[i]) {
             return;
