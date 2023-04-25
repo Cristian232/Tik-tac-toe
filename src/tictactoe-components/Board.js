@@ -19,8 +19,10 @@ export function Board({xIsNext, squares, onPlay}) {
     let status;
     if (winner){
         status = "Winner " + winner;
+    } else if(squares.every(element => element !== null)){
+        status = "Draw :(";
     } else {
-        status = "Next player: " + (xIsNext ? 'X':'Y');
+        status = "Next player: " + (xIsNext ? 'X':'O');
     }
 
     return(
