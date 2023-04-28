@@ -1,5 +1,6 @@
 import {calculateWinner} from "./calculateWinner";
 import Square from "./Square";
+import {useState} from "react";
 
 export function Board({xIsNext, squares, onPlay}) {
     function handleClick(i) {

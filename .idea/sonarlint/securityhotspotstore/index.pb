@@ -15,3 +15,9 @@ A
 package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+R
+"src/tictactoe-components/Square.js,3\3\33e31b9f8df5bede157ebc278a700ab98e8c5934
+A
+public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
+=
+src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
