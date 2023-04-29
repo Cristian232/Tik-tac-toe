@@ -1,21 +1,24 @@
 
-import {useEffect} from "react";
+import React,{useEffect} from "react";
 
 
-export function Alert() {
+export function Alert(props) {
+
+    const {isClicked} = props;
 
     useEffect(() => {
         const button = document.getElementById("submitButton");
-        button.addEventListener('click',buttonController);
+        button.addEventListener('click',buttonController,false);
 
         return () => {
             button.removeEventListener("click", buttonController);
         };
-    },[])
+    },[isClicked])
 
     function buttonController() {
         const input = document.getElementById("inputAlert");
         console.log(input.value);
+        isClicked();
     }
 
     return (
