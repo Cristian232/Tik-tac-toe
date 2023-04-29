@@ -2,7 +2,7 @@ import {calculateWinner} from "./calculateWinner";
 import Square from "./Square";
 import {useState} from "react";
 
-export function Board({xIsNext, squares, onPlay}) {
+export function Board({xIsNext, squares, onPlay,scoreBoard}) {
     function handleClick(i) {
         if (calculateWinner(squares) || squares[i]) {
             return;
@@ -20,6 +20,9 @@ export function Board({xIsNext, squares, onPlay}) {
     let status;
     if (winner){
         status = "Winner " + winner;
+        if (winner === 'X'){
+            scoreBoard();
+        }
     } else if(squares.every(element => element !== null)){
         status = "Draw :(";
     } else {

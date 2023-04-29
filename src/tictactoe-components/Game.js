@@ -1,7 +1,7 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Board} from "./Board";
 
-export function Game(){
+export function Game(props){
 
     const [history, setHistory] = useState([Array(9).fill(null)]);
     const [currentMove, setCurrentMove] = useState(0);
@@ -14,10 +14,14 @@ export function Game(){
         setCurrentMove(nextHistory.length-1);
     }
 
+    function scoreBoard() {
+        props.scoreBoard();
+    }
+
     return (
         <div className="game">
             <div className="game-board">
-                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} scoreBoard={scoreBoard} />
             </div>
         </div>
     );
