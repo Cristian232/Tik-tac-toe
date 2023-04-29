@@ -21,3 +21,13 @@ A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
 =
 src/index.css,c\5\c5d38a62d1faae90a2acaa34b79a7ef365c917e4
+[
++src/tictactoe-components/calculateWinner.js,4\7\47a4bb26556e285a32d78084ae0353bd74caf355
+Q
+!src/tictactoe-components/Board.js,5\0\500d5d032cf2ecfaa041b39025f67c71446246c5
+<
+src/index.js,f\9\f900edc44cb929c2267a16100a32851f6d5b477d
+U
+%src/tictactoe-components/calcScore.js,b\2\b28b07496c5daa8f41229a2464b06f158fd41a1b
+P
+ src/tictactoe-components/Game.js,9\e\9eab67a77157f218b9490a639baa447192553fbc
