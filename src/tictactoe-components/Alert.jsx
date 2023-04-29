@@ -17,6 +17,9 @@ export function Alert(props) {
 
     function buttonController() {
         const input = document.getElementById("inputAlert");
+        if (input.value === ""){
+            return;
+        }
         console.log(input.value);
         isClicked();
     }
