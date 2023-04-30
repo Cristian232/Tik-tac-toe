@@ -14,14 +14,10 @@ export function Game(props){
         setCurrentMove(nextHistory.length-1);
     }
 
-    function scoreBoard() {
-        props.scoreBoard();
-    }
-
     return (
         <div className="game">
             <div className="game-board">
-                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} scoreBoard={scoreBoard} />
+                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} scoreBoard={props.scoreBoard} />
             </div>
         </div>
     );
